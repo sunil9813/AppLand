@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>AppLand Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="header">
+    <header>
+      <div class="container ">
+        <div class="navbar flex1">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+
+          <nav>
+            <ul id="menuitem">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Overview">Overview</a></li>
+              <li><a href="#function">Functionalities</a></li>
+              <li><a href="#Features">Features</a></li>
+              <li><a href="#dowload">Download</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <button>Get Started</button>
+          </nav>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "500px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  <section class="home" id="home">
+    <div class="container flex1">
+      <div class="left">
+        <h1>A perfect APP can <br>
+          boost your business</h1>
+        <p>The collapse of the online-advertising market in 2001 made marketing on the Internet seem even less compelling.</p>
+
+        <div class="button flex">
+          <button class="btn1">Explore Features </button>
+          <button class="btn2">Learn More</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/home.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Overview mtop" id="Overview">
+    <br><br><br>
+    <div class="container">
+      <div class="heading">
+        <h1>App Overview</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/o1.png" alt="">
+            <i class="fas fa-download"></i>
+          </div>
+          <div class="text">
+            <h3>Download Anything</h3>
+            <p>Nascetur nonummy aptent integer deleniti inventore, aptent iste maxime eligendi fuga molestiae.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/o2.png" alt="">
+            <i class="fas fa-edit"></i>
+          </div>
+          <div class="text">
+            <h3>Easy To Customize</h3>
+            <p>Nascetur nonummy aptent integer deleniti inventore, aptent iste maxime eligendi fuga molestiae.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/o3.png" alt="">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="text">
+            <h3>Make Your Business Fly</h3>
+            <p>Nascetur nonummy aptent integer deleniti inventore, aptent iste maxime eligendi fuga molestiae.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="function  top" id="function">
+    <div class="container">
+      <div class="heading">
+        <h1>Major Functionalities</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+      </div>
+
+      <div class="fun_content">
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-chart-bar"></i>
+            <h3>Promotional Advertising Specialty You Ve Waited Long Enough</h3>
+            <p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs, logo designs? Talent…yes, it helps but there are a hand- ful of more important things you can do that
+              will
+              have even complete beginners producing award winning design.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fad fa-print-search"></i>
+            <h3>Promotional Advertising Specialty You Ve Waited Long Enough</h3>
+            <p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs, logo designs? Talent…yes, it helps but there are a hand- ful of more important things you can do that
+              will
+              have even complete beginners producing award winning design.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="content flex mtop">
+          <div class="left">
+            <i class="fas fa-rocket"></i>
+            <h3>Promotional Advertising Specialty You Ve Waited Long Enough</h3>
+            <p>Ever wondered how some graphic designers always manage to produce beautiful looking designs for their brochures, website designs, logo designs? Talent…yes, it helps but there are a hand- ful of more important things you can do that
+              will
+              have even complete beginners producing award winning design.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="right">
+            <div class="img">
+              <img src="image/f5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Features mtop" id="Features">
+    <div class="container">
+      <div class="heading">
+        <h1>Exclusive Features</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps </p>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left grid">
+          <div class="box">
+            <div class="img">
+              <i class="far fa-gem"></i>
+            </div>
+            <h3>Unique Design</h3>
+            <p>Nesciunt rerum occaecati quod et nesciunt dolorum, lacus accusamus nemo, facilis debitis.</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Clean Code</h3>
+            <p>Nesciunt rerum occaecati quod et nesciunt dolorum, lacus accusamus nemo, facilis debitis.</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Retina Ready</h3>
+            <p>Nesciunt rerum occaecati quod et nesciunt dolorum, lacus accusamus nemo, facilis debitis.</p>
+          </div>
+          <div class="box">
+            <div class="img">
+              <i class="fas fa-air-freshener"></i>
+            </div>
+            <h3>Pixel Perfect</h3>
+            <p>Nesciunt rerum occaecati quod et nesciunt dolorum, lacus accusamus nemo, facilis debitis.</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image">
+            <img src="image/fe.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dowload" id="dowload">
+    <div class="container flex">
+      <div class="left">
+        <h1>Get App Now!</h1>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed consequuntur magni dolores ratione voluptatem sequi nesciunt.</p>
+
+        <div class="flex">
+          <div class="box flex">
+            <div class="img">
+              <i class="fab fa-apple"></i>
+            </div>
+            <div class="text">
+              <span>Download on the</span>
+              <h2>App Store</h2>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="text">
+              <span>Download on the</span>
+              <h2>Google Play </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="image/d1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="team top" id="team">
+    <div class="container">
+      <div class="heading">
+        <h1>Trusted By Great Team</h1>
+        <p>Enhance Your Brand Potential With Giant Advertising Blimps</p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/t1.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t2.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t3.png" alt="">
+        </div>
+        <div class="box">
+          <img src="image/t4.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="image/logo2.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Post Tags</h3>
+        <button>App</button>
+        <button>Business</button>
+        <button>Corporate</button>
+        <button>Creative</button>
+        <button>Design</button>
+        <button>Fasion</button>
+        <button>Food</button>
+        <button>Mobile</button>
+        <button>Music</button>
+        <button>Travel</button>
+      </div>
+
+      <div class="box">
+        <h3>Blog Categories</h3>
+        <ul>
+          <li>App Review</li>
+          <li>Audio Post</li>
+          <li>Default Post</li>
+          <li>Uncategorized</li>
+          <li>Video Post</li>
+          <li>Website Review</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Location</li>
+          <li><i class="fas fa-mobile-alt"></i> +977 9813253082</li>
+          <li><i class="far fa-envelope"></i> example@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
